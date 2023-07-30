@@ -1,0 +1,159 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.blinkit-navbar {
+    border-bottom: 1px solid rgb(238, 238, 238);
+    position: sticky;
+    top: 0px;
+    height: 86px;
+    background-color: white;
+}
+
+.vertical-line {
+    border-left: 1px solid rgb(238, 238, 238);
+    height: 100%;
+}
+
+.location>p {
+    font-size: 13px;
+    color: rgb(0, 0, 0);
+    font-weight: 400;
+}
+
+.search-bar {
+    background-color: #F8F8F8;
+    border-radius: 8px;
+    border: 1px solid rgb(238, 238, 238);
+    padding: 10px;
+    width: 40vw;
+}
+
+.search-bar>input {
+    border: none;
+    width: 95%;
+    background-color: transparent;
+    font-weight: 400;
+    font-size: 14px;
+    color: rgb(153, 153, 153);
+}
+
+.search-bar>input:focus {
+    outline: none;
+}
+
+.login-btn {
+    border: none;
+    background-color: transparent;
+    font-size: 18px;
+    font-weight: 400;
+    color: rgb(54, 54, 54);
+    /* font-family: Okra-Regular; */
+}
+
+.cart-button {
+    cursor: pointer;
+    height: 52px;
+    width: 112px;
+    background-color: rgb(12, 131, 31);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border: none;
+    color: white;
+    border-radius: 10px;
+}
+
+.scrollable-div {
+    display: flex;
+    justify-content: center;
+    overflow: auto;
+    width: 85vw;
+    margin-inline: auto;
+}
+
+.list {
+    display: flex;
+    width: 100%;
+    margin-inline: auto;
+    white-space: nowrap;
+}
+
+.list>div {
+    margin: 10px;
+    display: inline-block;
+}
+
+.categories {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 80vw;
+    justify-content: space-between;
+    /* align-items: center; */
+    margin-inline: auto;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+.cards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 85vw;
+    justify-content: center;
+    margin-inline: auto;
+}
+
+.my-cards {
+    width: 85vw;
+    justify-content: center;
+    margin-inline: auto;
+}
+
+.card1 {
+    width: 190px;
+}
+
+.timer {
+    font-weight: 700;
+    font-size: 9px;
+    color: rgb(54, 54, 54);
+    padding: 3px;
+    width: fit-content;
+}
+
+.prod-name {
+    color: rgb(31, 31, 31);
+    font-weight: 600;
+    font-size: 13px;
+    margin-top: 6px;
+}
+
+.weight {
+    color: #666;
+    font-size: 12px;
+    font-family: 'Okra', Helvetica;
+}
+
+.btn1 {
+    cursor: pointer;
+    width: 66px;
+    border: 1px solid rgb(49, 134, 22);
+    height: 31px;
+    color: rgb(49, 134, 22);
+    font-weight: 600;
+    font-size: 13px;
+    font-family: Okra;
+    background-color: rgb(247, 255, 249);
+    border-radius: 7px;
+    font-weight: 700;
+    padding: 5px 10px;
+}
+.my-cards{
+    display: flex;
+    justify-content: space-between;
+}
