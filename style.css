@@ -15,23 +15,24 @@
 .vertical-line {
     border-left: 1px solid rgb(238, 238, 238);
     height: 100%;
-    
+
 }
 
 .location>p {
     font-size: 13px;
     color: rgb(0, 0, 0);
     font-weight: 400;
-    
+
 }
 
 .search-bar {
+    position: relative;
     background-color: #F8F8F8;
     border-radius: 8px;
     border: 1px solid rgb(238, 238, 238);
     padding: 10px;
     width: 40vw;
-   
+
 }
 
 .search-bar>input {
@@ -41,12 +42,12 @@
     font-weight: 400;
     font-size: 14px;
     color: rgb(153, 153, 153);
-   
+
 }
 
 .search-bar>input:focus {
     outline: none;
-   
+
 }
 
 .login-btn {
@@ -55,8 +56,6 @@
     font-size: 18px;
     font-weight: 400;
     color: rgb(54, 54, 54);
-    
-    /* font-family: Okra-Regular; */
 }
 
 .cart-button {
@@ -71,15 +70,18 @@
     color: white;
     border-radius: 10px;
 }
+
 .cart-logo:hover {
-    animation: sai 2s ease-in-out 0s 2 normal;
+    animation: sai 1s ease 0s 2 normal;
 }
-@keyframes sai{
-    0%{
-        transform:rotate(10deg);
+
+@keyframes sai {
+    0% {
+        transform: rotate(10deg);
     }
-    100%{
-        transform:rotate(-10deg);
+
+    100% {
+        transform: rotate(-10deg);
     }
 }
 
@@ -118,7 +120,6 @@
 }
 
 .my-cards>img {
-    z-index: -100px;
     position: absolute;
 }
 
@@ -140,7 +141,18 @@
     width: 230px;
     box-sizing: border-box;
     position: relative;
-
+    transition: all 1s ease-in-out;
+    -webkit-transition: all 0.9s ease-in-out;
+    -moz-transition: all 1s ease-in-out;
+    -ms-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
+}
+.card1:hover{
+    transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -o-transform: scale(1.2);
 }
 
 .my-cards>div {
@@ -254,21 +266,25 @@
     margin-top: 30px;
     margin-bottom: 30px;
 }
-td{
+
+td {
     padding: 3px 20px;
     color: #666666;
     font-size: 15px;
     text-align: left;
     cursor: pointer;
 }
-.heading{
+
+.heading {
     margin-bottom: 20px;
 }
-.table-2{
+
+.table-2 {
     flex: 4;
 }
-.table-1{
-    flex:2;
+
+.table-1 {
+    flex: 2;
 }
 
 .row-2 {
@@ -292,7 +308,7 @@ td{
     justify-content: center;
     color: #666666;
     font-size: 15px;
-    
+
 }
 
 .row-2-col-2>button {
@@ -333,11 +349,13 @@ td{
     color: #666666;
     font-size: 15px;
 }
-.table-categories{
+
+.table-categories {
     display: flex;
     /* justify-content:center; */
     align-items: center;
 }
+
 .prod-btn1 {
     border: none;
     font-size: 16px;
@@ -345,9 +363,59 @@ td{
     color: rgb(12, 131, 31);
     background-color: transparent;
 }
-@media screen and (min-width: 768px) {
-    .search-bar{
-        display:flex;
+.fotter-img,.user{
+    display: none;
+}
+
+@media only screen and (max-width: 1020px) {
+    .logo,.login-btn,.big-img {
+        display: none;
+    }
+    .login-btn,.cart-button{
+        margin-bottom: 20px;
+    }
+
+    .location {
+        position: fixed;
+        top: 15;
+        left: 4;
+    }
+
+    .blinkit-navbar {
+        border-bottom: none;
+    }
+
+    .vertical-line {
+        border: none;
+    }
+
+    .search-bar {
+        position: absolute;
+        top: 70px;
+        left: 4;
+        width: 96%;
+    }
+    .big-img{
+        display: none;
+    }
+    .scrollable-div{
+        margin-top: 50px;
+    }
+    .scrollable-div>img{
+        width: 85vw;
+        display: flex;
         flex-direction: column;
+    }
+    .list{
+        width: 100%;
+    }
+}
+@media screen and (max-width: 767px){
+    .my-footer,.login-btn,.cart-button{
+        display: none;
+    }
+    .fotter-img,.user{
+        display:block !important;
+        
     }
 }
