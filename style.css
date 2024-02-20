@@ -59,7 +59,7 @@
 }
 
 .login-btn:hover{
-    border: 1.3px solid red;
+    border-bottom: 1.3px solid red;
 }
 
 .cart-button {
