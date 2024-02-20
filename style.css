@@ -58,6 +58,10 @@
     color: rgb(54, 54, 54);
 }
 
+.login-btn:hover{
+    border: 1.3px solid red;
+}
+
 .cart-button {
     cursor: pointer;
     height: 52px;
